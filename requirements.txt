@@ -1,0 +1,7 @@
+PCCanalyser
+bokeh
+scipy
+numpy
+pandas
+tqdm
+matplotlib
