@@ -113,7 +113,7 @@ input_wdir.on_change('value', check_wdir)
 def check_resfilename(attrname, old, new):
     """
     """
-    if os.path.exists(new): # Check directory exists
+    if os.path.exists(new): # Check file exists
         div_message.text = f'File exists: {new}'
 
 # input_resfilename = TextInput(title='Save results to', value='/app/results/results.txt')
@@ -337,6 +337,7 @@ def run_simulation(event):
             #     if not cell.is_external:
             #         cell.set_special(True)
         cell_complex.reset_special(special_ids=set(special_ids), warn_external=False)
+        
         initial_grains_total_size = 0
         for grain_id in range(1, n0 + 1):
             initial_grains_total_size += cell_complex._grains[grain_id].size
