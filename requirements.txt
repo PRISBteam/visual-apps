@@ -1,4 +1,4 @@
-PCCanalyser
+PCCanalyser >= 0.5.0
 bokeh
 scipy
 numpy
